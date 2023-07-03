@@ -1,0 +1,17 @@
+<div class="divContainerItems">
+<div class="divContainerCards" >
+  <div class="divCard" *ngFor="let item of agentes"
+  [ngStyle]="{
+   
+    'background-size': 'contain',
+    'background-repeat': 'no-repeat',
+    'background-position': 'center',
+    'background-color': '#'+item.backgroundGradientColors[2]
+  }">
+    <a [routerLink]="['/categorias',item.uuid]">
+   <img class="displayPortrait" [src]="item.displayIcon" >
+   <h2 >{{item.displayName}}</h2>   
+  </a>
+  </div>  
+</div>
+</div>

@@ -1,0 +1,48 @@
+.divContainer{
+    background-image: url("/assets/background.png");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+
+    text-align: center;
+    color: white;
+}
+.divCabecera{
+   
+    margin-top: 80px;
+    background-color:white;
+    width: 100vw;
+}
+.divContent{
+    margin-top: 30px;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #53212b66;
+    align-items: center;
+    justify-content: center;
+   
+    flex-wrap: wrap;
+}
+#contenido{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    background-color:#000000c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+#contenido:hover{
+    background-color: #53212b66;
+}

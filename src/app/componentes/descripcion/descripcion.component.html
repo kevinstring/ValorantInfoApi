@@ -1,0 +1,27 @@
+
+<div class="divContainerItems">
+<div class="divContainerCards" >
+
+  <div class="card">
+    <div>
+    <img [src]="agente?.fullPortrait" width="600px" [ngStyle]="{
+      'background-image': 'url(' + agente?.background + ')',
+  'background-size': 'cover',
+  'background-repeat': 'no-repeat',
+  'background-position': 'center'
+    }
+    ">
+  
+  </div>
+    <div class="divInfoCard"> 
+  
+   <h1 style="color: blueviolet;"> <span></span>{{agente?.role.displayName}}</h1>
+   <div class="divHabilidades" >
+    <div class="divHab" *ngFor="let a of agente?.abilities" (click)="mostrarHabilidad(a.description)"><span>{{a.displayName}}</span> <img class="iconoHabilidad" [src]="a.displayIcon" width="40px"> </div>
+   </div>
+   <h3 *ngIf="habilidad, else info">{{descripcion}}</h3>
+   <ng-template #info><h3>{{agente?.role.description}}</h3></ng-template>
+  </div>  </div>
+  </div>
+</div>
+<app-miniSeleccion (agente)="recibirDatos($event)"></app-miniSeleccion>

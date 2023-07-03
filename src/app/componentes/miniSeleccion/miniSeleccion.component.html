@@ -1,0 +1,15 @@
+<div class="divContainerCards" >
+  <div class="divCard" *ngFor="let item of agentes"
+  [ngStyle]="{
+   
+    'background-size': 'contain',
+    'background-repeat': 'no-repeat',
+    'background-position': 'center',
+    'background-color': '#'+item.backgroundGradientColors[2]
+  }">
+    <a (click)="mandarDatos(item)">
+   <img class="displayPortrait" [src]="item.displayIcon" >
+ 
+  </a>
+  </div>  
+</div>

@@ -1,0 +1,25 @@
+.divContainerMaps{
+    height: 90vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+p{
+    color: white;
+}
+.divMapa{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBanner{
+    width:600px;
+    border-radius: 10px;
+}

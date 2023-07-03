@@ -1,0 +1,8 @@
+<div class="divContainerMaps" >
+ <div class="divMapa" *ngFor="let item of mapas" >
+  <p>{{item.displayName}}</p>
+  <a [routerLink]="['/car',item.uuid]">
+  <img [src]="item.listViewIcon" class="imgBanner">
+</a>
+</div>
+</div>

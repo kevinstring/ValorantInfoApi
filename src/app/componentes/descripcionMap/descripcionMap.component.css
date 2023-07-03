@@ -1,0 +1,19 @@
+.divContainerMapa{
+    background-color: white;
+       
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divContent{
+    margin-top: 50vh;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
